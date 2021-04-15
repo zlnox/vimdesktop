@@ -885,6 +885,8 @@ TC_ListMark()
     ControlGetPos, xn, yn, , , %TLB%, ahk_class TTOTAL_CMD
     Menu, FileTemp, Add
     Menu, FileTemp, DeleteAll
+    Menu, FileTemp, Add , N >> 文件, :TC_CreateNewFile
+    Menu, FileTemp, Icon, N >> 文件, %A_WinDir%\system32\Shell32.dll, -152
     Menu, FileTemp, Add , F >> 文件夹, <cm_Mkdir>
     Menu, FileTemp, Icon, F >> 文件夹, %A_WinDir%\system32\Shell32.dll, 4
     Menu, FileTemp, Add , S >> 快捷方式, <cm_CreateShortcut>
